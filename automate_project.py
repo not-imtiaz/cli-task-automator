@@ -11,3 +11,8 @@ def create_project(project_name):
         os.path.join(project_name, 'README.md'): f"# {project_name}\nProject initialized automatically.",
         os.path.join(project_name, '.gitignore'): "__pycache__/\n*.pyc\n.env\n.DS_Store"
     }
+
+    try:
+        for directory in directories:
+            os.makedirs(directory, exist_ok=True)
+            print(f"Created directory: {directory}")
