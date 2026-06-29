@@ -40,3 +40,6 @@ def main():
     parser = argparse.ArgumentParser(
         description="Initialize a standard project structure.")
     parser.add_argument('name', help='Name of the project to create')
+
+    args = parser.parse_args()
+    create_project(args.name)
