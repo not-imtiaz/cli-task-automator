@@ -23,7 +23,7 @@ def create_project(project_name):
             print(f"Created file: {path}")
 
         print("Initializing git repository...")
-        subprocess.run(['git', 'init', cwd = project_name], check=True)
+        subprocess.run(['git', 'init', cwd= project_name], check=True)
         subprocess.run(['git', 'add', '.'], cwd=project_name, check=True)
         subprocess.run(['git', 'commit', '-m', 'Initial commit'],
                        cwd=project_name, check=True)
@@ -34,3 +34,9 @@ def create_project(project_name):
         print(f"Error during git operations: {e}", file=sys.stderr)
     except OSError as e:
         print(f"File System Error: {e}", file=sys.stderr)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Initialize a standard project structure.")
+    parsr.add_argument('name', help='Name of the project to create')
