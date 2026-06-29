@@ -23,7 +23,7 @@ def create_project(project_name):
             print(f"Created file: {path}")
 
         print("Initializing git repository...")
-        subprocess.run(['git', 'init', cwd= project_name], check=True)
+        subprocess.run(['git', 'init', cwd = project_name], check=True)
         subprocess.run(['git', 'add', '.'], cwd=project_name, check=True)
         subprocess.run(['git', 'commit', '-m', 'Initial commit'],
                        cwd=project_name, check=True)
@@ -43,3 +43,7 @@ def main():
 
     args = parser.parse_args()
     create_project(args.name)
+
+
+if __name__ == "__main__":
+    main()
