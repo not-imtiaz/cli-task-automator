@@ -16,3 +16,8 @@ def create_project(project_name):
         for directory in directories:
             os.makedirs(directory, exist_ok=True)
             print(f"Created directory: {directory}")
+
+        for path, content in files.items():
+            with open(path, 'w') as f:
+                f.write(content)
+            print(f"Created file: {path}")
