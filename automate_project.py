@@ -39,4 +39,4 @@ def create_project(project_name):
 def main():
     parser = argparse.ArgumentParser(
         description="Initialize a standard project structure.")
-    parsr.add_argument('name', help='Name of the project to create')
+    parser.add_argument('name', help='Name of the project to create')
