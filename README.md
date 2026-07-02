@@ -90,4 +90,3 @@ python3 automate_project.py client-portal
 This creates a new `client-portal/` folder with the default structure and Git history.
 
 Instagram : https://instagram.com/imtiaahm
-
