@@ -87,4 +87,4 @@ The script reports errors if Git commands fail or if the filesystem cannot creat
 python3 automate_project.py client-portal
 ```
 
-This creates a new `client-portal/` folde
+This creates a new `client-portal/` fold
