@@ -87,4 +87,4 @@ The script reports errors if Git commands fail or if the filesystem cannot creat
 python3 automate_project.py client-portal
 ```
 
-This creates a new `client-portal/` folder with the default structure and Git history.
+This creates a new `client-portal/` folder with the default structure and Git history
